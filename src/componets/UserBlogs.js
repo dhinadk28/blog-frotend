@@ -6,7 +6,7 @@ const UserBlogs = () => {
   const id = localStorage.getItem("userId");
   const sendRequest = async () => {
     const res = await axios
-      .get(`http://localhost:5000/api/blogs/user/${id}`)
+      .get(`https://blog-backend-lovat.vercel.app/api/blogs/user/${id}`)
       .catch((err) => console.log(err));
     const data = await res.data;
     console.log(data);

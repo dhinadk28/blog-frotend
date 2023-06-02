@@ -23,7 +23,7 @@ const AddBlogs = () => {
   };
   const sendRequest = async () => {
     const res = await axios
-      .post("http://localhost:5000/api/blogs/add", {
+      .post("https://blog-backend-lovat.vercel.app/api/blogs/add", {
         title: inputs.title,
         desc: inputs.description,
         img: inputs.imageURL,
